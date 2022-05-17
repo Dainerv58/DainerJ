@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="css/estilosTeoriacss.css" media="screen">
+<title>Curso Css</title>
+</head>
+<body>
+<!--Aqui comienza el div contenedor-->
+<div class="contenedor">
+
+	<!--Aqui comienza el div cabezera-->
+	<div class="cabezera">
+	<header>
+	<h1>DainerJ</h1>
+	</header>
+	</div>
+	<!--Aqui termina el div cabezera-->
+
+	<!--Aqui comienza el div menu-->
+	<div class="menu">
+		<nav>
+			<ul>
+				<li><a href="home.html">Inicio</a></li>
+				<li><a href="#">Web</a>
+					<ul>
+						<!--Submenu-->
+						<li><a href="teoriaCss.html">Css</a></li>
+						<li><a href="teoriaHtml.html">Html</a></li>
+						<li><a href="teoriaJavascript.html">Javascript</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Practicas</a>
+					<ul>
+						<li><a href="PracticaHtml.html">Practica Html</a></li>
+						<li><a href="practicaCss.html">Practica Css</a></li>
+						<li><a href="practicaJavascript.html">Practica Javascript</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Otros</a>
+					<ul>
+						<li><a href="videos.html">Videos</a></li>
+						<li><a href="ejercicios.html">Ejercicios</a></li>
+					</ul>
+				</li>
+		</ul>
+		</nav>
+	</div>
+	<!--Aqui termina el div menu-->
+	<br><br><br><br>
+	<hr>
+
+	<!--Aqui comienza el div teoriaCss-->
+	<div class="teoriaCss">
+		<h2>Teoria Css</h2>
+		<p>son las siglas de ("Cascade Style Sheet") que traducido significa hojas de estilo en cascada. 
+	Las hojas de estilo es una tecnología que nos permite controlar la apariencia de una página web. 
+	En un principio, los sitios web se concentraban más en su contenido que en su presentación.<br><br>
+
+	Con CSS podemos especificar estilos como el tamaño, fuentes, color, espaciado entre textos y recuadros así como el lugar 
+	donde disponer texto e imágenes en la página. El lenguaje de las Hojas de Estilo está definido en la Especificaciones 
+	CSS1, CSS2 y CSS3 del World Wide Web Consortium (W3C), es un estándar aceptado por toda la industria relacionada con la Web, 
+	o por lo menos, gran parte de navegadores.<br><br>
+
+	Nota: HTML no pone atención en la apariencia del documento, sino en la estructura. CSS describe como los elementos 
+	dispuestos en la página son presentados al usuario. CSS es un gran avance que complementa el HTML y la Web en general.</p>
+	</div>
+	<!--Aqui termina el div teoriaCss-->
+	<hr>
+	<!--Aqui comienza el div sintaxisCss-->
+	<div class="sintaxisCss">
+	<h2>Sintaxis Css</h2>
+	<p>Un conjunto de reglas CSS consta de un selector y un bloque de declaración ejemplo :<br><br>
+	
+	<pre>Selector html   Propiedad css   Valor css
+	 h1           {color:         blue;}</pre><br><br>
+
+	Nota : El selector apunta al elemento HTML que desea diseñar. El bloque de declaración contiene una o más declaraciones separadas por punto y 
+	coma. Cada declaración incluye un nombre de propiedad CSS y un valor, separados por dos puntos. Una declaración CSS siempre termina con un 
+	punto y coma, y ​​los bloques de declaración están rodeados por llaves.
+
+	En este ejemplo, todos los elementos p estarán alineados al centro, con un color de texto rojo:<br><br>
+
+	<pre>
+	<p> Hello I am a paragraph</p>
+
+	p {
+	  color: red;
+	  text-align: center;
+	}
+	</pre>
+	</p>
+	</div>
+	<!--Aqui termina el div sintaxisCss-->
+	<hr>
+	<!--Aqui comienza el div incluirCss-->
+	<div class="incluirCss">
+	<h2>incluir CSS en documento HTML</h2>
+	<p>Existen 3 modos para incluir css acontinuacion:</p>
+	<h3>Definición de estilos a nivel de elemento HTML</h3>
+	<p>Es la forma más fácil pero menos recomendada para aplicación de un estilo a un elemento HTML. Se define en la propiedad style 
+	los estilos a definir para dicho elemento. Es común a veces definir estilos directamente en los elementos HTML cuando estamos probando 
+	diseños de elementos particulares de la página y posteriormente trasladar el estilo creado a la zona de definición de estilos, La sintaxis 
+	para definir un estilo a un elemento HTML es la siguiente ejemplo:<br><br>
+	<pre>
+	!DOCTYPE html>
+	html>
+	head>
+	title>titulo de la pagina/title>
+	/head>
+	body>
+
+	h1 style="color:#ff0000;background-color:#ffff00"> Este mensaje es de color rojo sobre fondo amarillo./h1>
+	
+
+	/body>
+	/html>
+	</pre>
+
+	Nota : Cuando definimos estilos directamente en el elemento HTML, tenemos que tener en cuenta que el estilo se aplica únicamente a dicho 
+	elemento donde inicializamos la propiedad style, es decir, si tenemos dos secciones h1, deberemos definir la propiedad style para cada elemento:<br></p>
+	<h3>Definición de estilos a nivel de páginar</h3>
+	<p>También podemos hacer la definición de estilos para los distintos elementos HTML de la página en una sección especial de la cabecera 
+	que la encerramos entre las marcas head y /head (en su interior definimos los estilos para los elementos HTML 
+	que necesitemos) ejemplo:
+	<pre>
+	!DOCTYPE html>
+	html>
+	head>
+	title>Problema/title>
+	meta charset="UTF-8">
+
+	style>
+	  h1 {color:#ff0000;background-color:#ffff00}
+	/style>
+
+	/head>
+	<body>
+
+	h1>Primer título/h1>
+	h1>Segundo título/h1>
+
+	/body>
+	/html>
+	</pre>
+
+	Nota : un estilo en línea tiene la máxima prioridad y anulará los estilos externos e internos y los valores predeterminados del navegador.</p>
+	<h3>Definición de estilos a nivel externo CSS</h3>
+	<p>se basada en declarar los estilos CSS en un archivo independiente que puede servir como referente 
+	para dotar de estilos a decenas, cientos o miles de archivos html, que únicamente deberán invocar el nombre de archivo utilizando una sintaxis específica. 
+	De este modo un cambio en los estilos habrá que hacerlo únicamente en el archivo de estilos correspondiente, lo cual supone una gran ventaja. 
+	Incluso un cambio completo de los estilos de una página web se puede conseguir simplemente sustituyendo el archivo correspondiente.<br>
+	ejemplo:<br><br>
+	<pre>
+	!DOCTYPE html>
+	html>
+	head>
+	link rel="stylesheet" type="text/css" href="mystyle.css">
+	/head>
+	body>
+
+	h1>This is a heading/h1>
+	p>This is a paragraph./p>
+
+	/body>
+	/html>
+	</pre>
+
+	Nota : Se puede escribir una hoja de estilo externa en cualquier editor de texto y se debe guardar con una extensión .css 
+	El archivo externo .css no debe contener ninguna etiqueta HTML. No agregue un espacio entre el valor de la propiedad y la unidad 
+	(como margin-left: 20 px;). La forma correcta es:margin-left: 20px;<br><br>
+
+	Ten en cuenta que si como ruta de archivo indicas simplemente el nombre del archivo, éste debe encontrarse en la misma carpeta en que se encuentre 
+	el documento HTML. Si el archivo CSS se encuentra en otra carpeta deberás indicarlo escribiendo una URL completa u bien una URL relativa que determine la ruta.</p>
+	</div>
+	<!--Aqui termina el div incluirCss-->
+	<hr>
+	<!--Aqui comienza el div propiedadesCss-->
+	<div class="propiedadesCss">
+	<h2>Propiedades Css</h2>
+	<p>Acontinuacion las principales propiedades</p>
+	<h3>Font-family</h3>
+	<p>Define la familia tipográfica. Es conveniente poner una lista de dos o tres tipografías separadas por coma, porque si el usuario no tiene instalada 
+	la tipografía que nosostros elegimos, el navegador opta por mostrar la siguiente que debería ser una similar, si tampoco la tiene instalada, mostrará la 
+	tipografía por defecto.</p>
+	<h3>Font-size</h3>
+	<p>Define el tamaño de la fuente y el valor se puede escribir en pixels o en ems. En este momento se recomienda usar ems. 
+	Los dos son valores relativos, el pixel es un valor relativo a la resolución de la pantalla, pero el em es relativo al tamaño de la fuente 
+	definida por el usuario. Si el usuario no cambió la configuración, el valor por defecto de los textos en todos los navegadores es de 16px. Entonces 1em = 16px.</p>
+	<h3>Color</h3>
+	<p>Define el color de la tipografía. Los colores se pueden escribir de 3 formas distinas: con sistema hexadecimal, por ejemplo: #FF0000 (es rojo). 
+	Con los nombres de los colores (más limitado) por ejemplo: black, red, green. O usando RGB, esta paleta permite agregar el canal alfa para hacer transparencias.</p>
+	<h3>Width</h3>
+	<p>Define el ancho de un elemento, el valor se puede escribir en pixels, ems o porcentaje.</p>
+	<h3>Max-width o min-width</h3>
+	<p>Definen el ancho máximo o mínimo de un elemento. Muy importante en sitios adaptables</p>
+	<h3>Height</h3>
+	<p>Define el alto de un elemento, el valor se puede escribir en pixels, ems o porcentaje.</p>
+	<h3>Max-height o min-height</h3>
+	<p>Definen el alto máximo o mínimo de un elemento. Muy importante en sitios adaptables</p>	
+	<h3>Padding</h3>
+	<p>Es la distancia desde el borde de un elemento hasta su contenido.</p>
+	<h3>Margin</h3>
+	<p>Es la distancia entre un elemento y otro (desde el borde de un elemento hacia afuera)</p>
+	<h3>Border</h3>
+	<p>Define el borde de un elemento, su color, su estilo y grosor.</p>
+	<h3>Background</h3>
+	<p>Define los fondos de un objeto. El fondo puede ser una imagen o un color. El color puede ser pleno o degradado. La imagen se puede repetir 
+	formando una trama (es lo que ocurre por defecto) o se puede especificar que no repita y que se coloque en determinada posición.</p>
+	</div>
+	<!--Aqui termina el div propiedadesCss-->
+	<hr>
+	<!--Aqui comienza el div comentariosCss-->
+	<div class="comentariosCss">
+	<h2>Comentarios en Css</h2>
+	<p>Los comentarios se utilizan para explicar el código y pueden ayudar cuando edite el código fuente en una fecha posterior.
+	ejemplo:<br>
+	<pre>
+	<p> Hello I am a paragraph</p>
+
+	p {
+  	  color: red;
+        /* Esto es un comentario */
+  	  text-align: center;
+    	  }
+	</pre>
+Nota: Los comentarios son ignorados por los navegadores. Un comentario CSS comienza con / * y termina con * /. Los comentarios también pueden abarcar varias líneas:</p>
+	</div>
+	<!--Aqui termina el div comentariosCss-->
+	<hr>
+	<!--Aqui comienza el div selectoresCss-->
+	<div class="selectoresCss">
+	<h2>Selectores Css</h2>
+	<p>Los selectores CSS se utilizan para "encontrar" (o seleccionar) los elementos HTML que desea diseñar. 
+	Podemos dividir los selectores CSS en cinco categorías:<br>
+
+	Selectores simples : (seleccione elementos basados ​​en nombre, id, clase)<br>
+	Selectores de combinador : (seleccione elementos basados ​​en una relación específica entre ellos)<br>
+	Selectores de pseudo-clase : (seleccione elementos basados ​​en un estado determinado)<br>
+	Selectores de pseudo-elementos : (seleccionar y diseñar una parte de un elemento)<br>
+	Selectores de atributos : (seleccione elementos basados ​​en un atributo o valor de atributo)</p>
+	</div>
+	<!--Aqui termina el div selectoresCss-->
+	<hr>
+	<!--Aqui comienza el div selectoresUniversal-->
+	<div class="selectoresUniversal">
+	<h2>selectoresUniversal</h2>
+	<p>El selector universal se escribe con el asterisco (*) selecciona todos los elementos HTML en la página.
+	ejemplo:
+	<pre>
+	 * {
+       text-align: center;
+       color: blue;
+	}
+	</pre>
+	</p>
+	</div>
+	<!--Aqui termina el div selectoresUniversal-->
+	<hr>
+	<!--Aqui comienza el div selectoresEtiqueta-->
+	<div class="selectoresEtiquetas">
+	<h2>Selectores de etiquetas</h2>
+	<p>selecciona elementos HTML en función del nombre del elemento. ejemplo :<br>
+
+	Aquí, todos los elementos p de la página estarán alineados al centro, con un color de texto rojo: <br>
+
+       <p> Hello I am a paragraph</p><br>
+	<pre>
+	 p {
+	   text-align: center;
+	   color: red;
+	   }
+	</pre>
+	</p>
+	</div>
+	<!--Aqui termina el div selectorEtiqueta-->
+	<hr>
+	<!--Aqui comienza el div selectorClase-->
+	<div class="selectoresClases">
+	<h2>Selectores de clases</h2>
+	<p>El selector de clase selecciona elementos HTML con un atributo de clase específico, Para seleccionar elementos con una clase específica, 
+	escriba un carácter de punto (.), Seguido del nombre de la clase ejemplo:<br>
+
+	   En este ejemplo, solo los elementos <p> con class = "center" estarán alineados al centro:<br>
+
+	   	<p class="center"> Hello I am a paragraph</p><br>
+	<pre>
+	 .center {
+	         text-align: center;
+	         color: red;
+	 }
+	</pre>
+	Nota : Los elementos HTML también pueden referirse a más de una clase ejemplo:<br>
+
+	En este ejemplo, el elemento p se diseñará de acuerdo con class = "center" y class = "large"<br>
+
+        h1 class="center">This heading will not be affected/h1><br>
+        p class="center">This paragraph will be red and center-aligned./p><br>
+        p class="center large">This paragraph will be red, center-aligned, and in a large<br><br>
+	<pre>
+	p.large {
+	font-size: 300%;
+	}
+	</pre>
+	Nota: Un nombre de clase no puede comenzar con un número</p>
+
+	</div>
+	<!--Aqui termina el div selectoresClases-->
+
+	<hr>
+
+	<!--Aqui comienza el div selectoresId-->
+	<div class="selectorId">
+	<h2>Selectores id</h2>
+	<p>El selector de id utiliza el atributo id de un elemento HTML para seleccionar un elemento específico. La identificación de un elemento 
+	es única dentro de una página, por lo que el selector de identificación se usa para seleccionar un elemento único, Para seleccionar un 
+	elemento con una identificación específica, escriba un carácter hash (#), seguido de la identificación del elemento. ejemplo:<br>
+
+	La siguiente regla CSS se aplicará al elemento HTML con id = "para1": <br>
+	
+	<pre>
+	  p id="para1"> Hello I am a paragraph/p>
+
+	 #para1 {
+	        text-align: center;
+	        color: red;
+	 }
+	</pre><br>
+	Nota: ¡ Un nombre de identificación no puede comenzar con un número!</p>
+
+	</div>
+	<!--Aqui termina el div selectoresId-->
+	
+	<hr>
+
+	<!--Aqui comienza el div selectorDescendente-->
+	<div class="selectoresDescendentes">
+	<h2>Selectores descendentes</h2>
+	<p>Los selectores descendentes siempre están formados por dos o más selectores separados entre sí por espacios en blanco. 
+	El último selector indica el elemento sobre el que se aplican los estilos y todos los selectores anteriores indican el lugar 
+	en el que se debe encontrar ese elemento.<br>
+	
+	En el siguiente ejemplo, el selector descendente se compone de cuatro selectores:<br><br>
+	
+	p a span em { text-decoration: underline; }
+	</p>
+	</div>
+	<!--Aqui termina el div selectoresDescendentes-->
+
+	<hr>
+
+	<!--Aqui comienza el div selectorescombinacion-->
+	<div class="selectorescombinacion">
+	<h2>Selectores combinacion</h2>
+	<p>CSS permite la combinación de uno o más tipos de selectores para restringir el alcance de las reglas CSS. A continuación se muestran algunos 
+	ejemplos habituales de combinación de selectores.<br>
+
+	.aviso .especial { ... }<br>
+	El anterior selector solamente selecciona aquellos elementos con un class="especial" que se encuentren dentro de cualquier elemento con un class="aviso".</p>
+	</div>
+	<!--Aqui termina el div selectorescombinacion-->
+		
+	<hr>
+
+	<!--Aqui comienza el div selectorHijo-->
+	<div class="selectorHijo">
+	<h2>Selector Hijo</h2>
+	<p>Se trata de un selector similar al selector descendente, pero muy diferente en su funcionamiento. Se utiliza para seleccionar un elemento 
+	que es hijo directo de otro elemento y se indica mediante el "signo de mayor que" (>):<br>
+
+	p > span { color: blue; }<br><br>
+
+	p>span>Texto1/span>/p><br>
+	p>a href="#">span>Texto2/span>/a>/p><br><br>
+	
+	En el ejemplo anterior, el selector p > span se interpreta como "cualquier elemento span> que sea hijo directo de un elemento p>", 
+	por lo que el primer elemento span> cumple la condición del selector. Sin embargo, el segundo elemento span> no la cumple porque 
+	es descendiente pero no es hijo directo de un elemento p>.
+	</p>
+	</div>
+	<!--Aqui termina el div selectorHijo-->
+
+	<hr>
+
+	<!--Aqui comienza el div selectorAdyacente-->
+	<div class="selectorAdyacente">
+	<h2>Selector adyacente</h2>
+	<p>El selector adyacente se emplea para seleccionar elementos que en el código HTML de la página se encuentran justo a continuación de 
+	otros elementos. Su sintaxis emplea el signo + para separar los dos elementos:<br>
+	<pre>
+	Si se considera el siguiente código HTML:
+
+	body>
+	h1>Titulo1/h1>
+
+	h2>Subtítulo/h2>
+	...
+
+	h2>Otro subtítulo/h2>
+	...
+	/body>
+	
+	Codigo css
+
+
+	h2 { color: green; }
+	h1 + h2 { color: red }
+	</pre>
+	</p>
+	</div>
+	<!--Aqui termina el div selectorAdyacente-->
+
+	<hr>
+
+	<!--Aqui comienza el div selectorAtributos-->
+	<div class="selectorAtributos">
+	<h2>Selector atributos</h2>
+	<p>El último tipo de selectores avanzados lo forman los selectores de atributos, que permiten seleccionar elementos 
+	HTML en función de sus atributos y/o valores de esos atributos.<br><br>
+
+	Los cuatro tipos de selectores de atributos son:<br>
+
+	[nombre_atributo], selecciona los elementos que tienen establecido el atributo llamado nombre_atributo, independientemente
+	de su valor.<br>
+	[nombre_atributo=valor], selecciona los elementos que tienen establecido un atributo llamado nombre_atributo con un valor 
+	igual a valor.<br>
+	[nombre_atributo~=valor], selecciona los elementos que tienen establecido un atributo llamado nombre_atributo y al menos 
+	uno de los valores del atributo es valor.<br>
+	[nombre_atributo|=valor], selecciona los elementos que tienen establecido un atributo llamado nombre_atributo y cuyo 
+	valor es una serie de palabras separadas con guiones, pero que comienza con valor. Este tipo de selector sólo es útil 
+	para los atributos de tipo lang que indican el idioma del contenido del elemento.<br><br>
+
+	Ejemplo:<br>
+	/* Se muestran de color azul todos los enlaces que tengan
+ 	un atributo "class", independientemente de su valor */<br>
+	a[class] { color: blue; }<br><br>
+
+	/* Se muestran de color azul todos los enlaces que tengan
+  	 un atributo "class" con el valor "externo" */<br>
+	a[class="externo"] { color: blue; }<br><br>
+
+	/* Se muestran de color azul todos los enlaces que apunten
+  	 al sitio "http://www.ejemplo.com" */<br>
+	a[href="http://www.ejemplo.com"] { color: blue; }<br><br>
+
+	/* Se muestran de color azul todos los enlaces que tengan
+  	 un atributo "class" en el que al menos uno de sus valores
+  	 sea "externo" */<br>
+	a[class~="externo"] { color: blue; }<br><br>
+
+	/* Selecciona todos los elementos de la página cuyo atributo
+  	 "lang" sea igual a "en", es decir, todos los elementos en inglés */<br>
+	*[lang=en] { ... }<br><br>
+
+	/* Selecciona todos los elementos de la página cuyo atributo
+   	"lang" empiece por "es", es decir, "es", "es-ES", "es-AR", etc. */<br>
+	*[lang|="es"] { color : red }
+	</p>
+	</div>
+	<!--Aqui termina el div selectoratributos-->
+
+	<hr>
+
+	<!--Aqui comienza el div pseudoClasses-->
+	<div class="pseudoClasses">
+	<h2>Pseudo classes</h2>
+	<p>Una pseudoclase CSS es una palabra clave que se añade a los selectores y que especifica un estado especial del 
+	elemento seleccionado. Por ejemplo,  :hover aplicará un estilo cuando el usuario haga hover sobre el elemento 
+	especificado por el selector.<br><br>
+
+	Las pseudoclases, junto con los pseudoelementos, permiten aplicar un estilo a un elemento no sólo en relación con el 
+	contenido del árbol de documento, sino también en relación a factores externos como el historial del navegador 
+	(:visited, por ejemplo), el estado de su contenido (como :checked en algunos elementos de formulario), o la posición 
+	del ratón (como :hover que permite saber si el ratón está encima de un elemento o no).</p>
+	</div>
+
+	<!--Aqui termina el div pseudoClasses-->
+
+	<hr>
+
+	<!--Aqui comienza el div herencia-->
+	<div class="herencia">
+	<h2>Herencia</h2>
+	<p>Cuando se establece el valor de una propiedad CSS en un elemento, sus elementos descendientes heredan de forma 
+	automática el valor de esa propiedad<br>
+	</p>
+	</div>
+	<!--Aqui termina el div herencia-->
+
+	<hr>
+
+	<!--Aqui comienza el div selectorAdyacente-->
+	<div class="selectorAdyacente">
+	<h2>Selector adyacente</h2>
+	<p></p>
+	</div>
+	<!--Aqui termina el div selectorAdyacente-->
+
+	<hr>
+
+
+
+<!--Aqui termina el div contenedor-->
+</div>
+</body>
+</html>

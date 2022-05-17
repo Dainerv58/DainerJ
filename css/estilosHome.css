@@ -1,0 +1,44 @@
+* {
+	padding: 0px;
+	margin: 0px;
+}
+
+header {
+	background-color: 	
+}
+
+.menu {
+	margin: auto;
+	width:500px;
+	font-family: arial;
+}
+
+ul  {
+	list-style:none;
+}
+
+.menu li a {
+	background-color: #000000;
+	color: #FFFFFF;
+	text-decoration:none;
+	padding: 15px 20px;
+	display: block;
+}
+
+.menu li > a:hover {
+	background-color: #434343;
+}
+
+.menu  li {
+	float:left;
+}
+
+.menu li ul {
+	display:none;
+	position:absolute;
+	min-width:140px;
+}
+
+.menu li:hover > ul {
+	display:block;
+}

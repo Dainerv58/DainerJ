@@ -1,0 +1,1478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Teoria HTML</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="css/estilosHome.css" media="screen"/>
+</head>
+<body>
+<!--Aqui empieza el div container-->
+<div class="container-fluid">
+<!--Aqui abre el div cabezera-->
+<div class="cabezera">
+<header>
+<h1>DainerJ</h1>
+
+</header>
+<!--Aqui cierra el div cabezera-->
+</div>
+
+<!--Aqui comienza el div menu-->
+	<div class="menu">
+		<nav>
+			<ul>
+				<li><a href="home.html">Inicio</a></li>
+				<li><a href="#">Web</a>
+					<ul>
+						<!--Submenu-->
+						<li><a href="teoriaCss.html">Css</a></li>
+						<li><a href="teoriaHtml.html">Html</a></li>
+						<li><a href="teoriaJavascript.html">Javascript</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Practicas</a>
+					<ul>
+						<li><a href="PracticaHtml.html">Practica Html</a></li>
+						<li><a href="practicaCss.html">Practica Css</a></li>
+						<li><a href="practicaJavascript.html">Practica Javascript</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Otros</a>
+					<ul>
+						<li><a href="videos.html">Videos</a></li>
+						<li><a href="ejercicios.html">Ejercicios</a></li>
+					</ul>
+				</li>
+		</ul>
+		</nav>
+	</div>
+	<br><br><br><br>
+	<!--Aqui termina el div menu-->
+
+
+
+	<!--Aqui comienza el div conceptoHtml-->
+	<div class="conceptoHtml">
+	<h2 id="curso">Curso HTML</h2>
+	<p id="curso1"><blockquote>HTML</blockquote> es un lenguaje de marcado que se utiliza para el desarrollo de páginas de Internet. Se trata de la siglas que corresponden a 
+	HyperText Markup Language, es decir, Lenguaje de Marcas de Hipertexto”, HTML describe la estructura de una página web, HTML consiste en una 
+	serie de elementos, Los elementos HTML le dicen al navegador cómo mostrar el contenido, Los elementos HTML están representados por etiquetas 
+	tambien llamados elementos. <blockquote>Las etiquetas HTML etiquetan piezas de contenido como "encabezado", "párrafo", "tabla", etc.</blockquote>
+	</p>
+	</div>
+	<!--Aqui cierra el div conceptoHtml-->
+
+	<!--Aqui comienza el div conceptoDoctype-->
+	<div class="conceptoDoctype">
+	<h2>Concepto DOCTYPE</h2>
+	<p>!DOCTYPE html declaración define este documento como HTML5</p>
+	</div>
+	<!--Aqui cierra el div conceptoDoctype-->
+
+
+	<!--Aqui comienza el div estructuraHtml-->
+	<div class="estructuraHtml">
+	<h2>Estructura HTML </h2>
+	<p>La estructura de Html esta compuesta por una serie de etiquetas las cuales son las principales en donde iran
+	las bases de nuestro documento.<br>
+	Lo principal es especicar que el documento es HTML con la etiqueta <b>"!DOCTYPE html"</b> con "<" menor que para abrir
+	y ">" mayor que para cerrar, "<>" Se utiliza para abrir y cerras toda etiqueta, cada etiqueta tiene una etiqueta
+	de cierre con un "/" y el nombre de la etiqueta.<br>
+	Luego la etiqueta <b>"html"</b> que es la raiz del documento.<br>
+	Seguida de etiqueta <b>"head"</b> donde va la metainformacion sobre el documento<br>
+	Seguida de la etiqueta <b>"body"</b> donde va el contenido visible de la pagina<br>
+	<b>Ejemplo:</b><br>
+	!DOCTYPE html<br>
+	html><br>
+	head><br>
+	title>titulo de la pagina /title><br>
+	/head><br>
+	body><br>
+
+	h1>My primer titulo./h1><br>
+	p>My primer parrafo./p><br>
+
+	/body><br>
+	/html><br>
+<b>Nota:</b> Elimine  los < para que se pudiera mostrar en la pagina.
+</p>
+</div>
+<!--Aqui termina el div estructuraHtml-->
+
+<!--Aqui comienza el div EtiquetaHtml-->
+<div class="etiquetaHtml">
+<h2>Etiqueta Html</h2>
+<p>El elemento html define todo el documento. Tiene una etiqueta de inicio y una etiqueta de finalización</p>
+</div>
+<!--Aqui termina el div EtiquetaHtml-->
+
+<!--Aqui comienza el div head-->
+<div class="etiquetaHead">
+<h2>Etiqueta Head</h2>
+<p>El elemento head es un contenedor de metadatos. Los metadatos HTML son datos sobre el documento HTML. Los 
+metadatos no se muestran. El elemento head se coloca entre la etiqueta html y la etiqueta body Los metadatos no se muestran.
+Los metadatos generalmente definen el título del documento, el juego de caracteres, los estilos, los scripts y otra metainformación.
+</div>
+<!--Aqui termina el Div EtiquetaHead-->
+
+<!--Aqui comienza el div EtiquetaMeta-->
+<div class="etiquetaMeta">
+<h2>Etiqueta Meta</h2>
+<p>El elemento "meta" se utiliza para especificar qué conjunto de caracteres se utiliza, descripción de la página, 
+palabras clave, autor y otros metadatos. Los navegadores (cómo mostrar contenido), los motores de búsqueda (palabras clave) y otros servicios 
+web utilizan los metadatos. ejemplo : <br>
+
+	meta charset="UTF-8"> <br>
+	meta name="viewport" content="width=device-width, initial-scale=1.0"><br>
+	meta name="description" content="Free Web tutorials"><br>
+	meta name="keywords" content="HTML, CSS, XML, JavaScript"><br>
+	meta name="author" content="Dainer villarreal"><br>
+<b>Nota:</b> Elimine  los < para que se pudiera mostrar en la pagina.</p>
+</div>
+<!--Aqui termina el Div EtiquetaMeta-->
+
+<!--Aqui comienza el div EtiquetaTitle-->
+<div class="etiquetaTitle">
+<h2>Etiqueta Title</h2>
+<p>El elemento title define el título del documento y es obligatorio en todos los documentos HTML. El elemento 
+title define un título en la pestaña del navegador proporciona un título para la página cuando se agrega a favoritos, 
+muestra un título para 
+la página en los resultados del motor de búsqueda.</p>
+</div>
+<!--Aqui termina el Div EtiquetaTitle-->
+
+<!--Aqui comienza el div EtiquetaBody-->
+<div class="etiquetaBody">
+<h2>Etiqueta Body</h2>
+<p> El elemento body define el cuerpo del documento Tiene una etiqueta de inicio y una etiqueta de finalización.</p>
+</div>
+<!--Aqui termina el Div EtiquetaBody-->
+
+<!--Aqui comienza el div Etiquetas en Html-->
+<div class="etiquetas">
+<h2>Etiquetas en Html</h2>
+<p> Las etiquetas HTML son nombres de elementos rodeados de corchetes angulares: Las etiquetas HTML normalmente 
+vienen en pares como p> y /p> La primera etiqueta en un par es la etiqueta de inicio, la segunda etiqueta es la etiqueta 
+final La etiqueta final se escribe como la etiqueta 
+inicial, pero con una barra diagonal insertada antes del nombre de la etiqueta
+</p>
+</div>
+<!--Aqui termina el Div Etiquetas en html-->
+
+<!--Aqui comienza el div Etiquetas nivel de Bloque-->
+<div class="etiquetaBloque">
+<h2>Etiquetas nivel de bloque</h2>
+<p> Un elemento de nivel de bloque siempre comienza en una nueva línea y ocupa todo el ancho disponible (se extiende hacia la 
+izquierda y hacia la derecha tanto como sea posible, por ejemplo El elemento div> es un elemento de nivel de bloque.
+Elementos de nivel de bloque en HTML:<br>
+address> article> aside> blockquote> canvas> dd> div> dl> dt> fieldset> figcaption> figure> footer> form> h1> al
+h6> header> hr> i> main> nav> noscript> ol> p> pre> section> table> tfoot> ul> video></p>
+</div>
+<!--Aqui termina el Div Etiquetas nivel de Bloque-->
+
+<!--Aqui comienza el div EtiquetaDiv-->
+<div class="etiquetaDiv">
+<h2>Etiqueta Div</h2>
+<p>El elemento div> se usa a menudo como contenedor para otros elementos HTML, El elemento div> tiene atributos no son 
+necesarios, pero style, class y id son comunes. Cuando se usa junto con CSS, el elemento div> se puede usar para diseñar 
+bloques de contenido ejemplo:<br>
+<br>
+	div style="background-color:black;color:white;padding:20px;"><br>
+      h2>London/h2><br>
+      p>London is the capital city of England. It is the most populous city in the United Kingdom, 
+with a metropolitan area of over 13 million inhabitants./p><br>
+    /div></p>
+</div>
+<!--Aqui termina el Div EtiquetaDiv-->
+
+
+<!--Aqui comienza el div EtiquetaSection-->
+<section class="etiquetasection">
+<h2>Etiqueta Section</h2>
+<p>Se podria decir que es lo mismo que la Etiqueta Div, define secciones en el documento, encabezados, pie de paginas, etc...<p>
+<!--Aqui termina el div EtiquetaSection-->
+</section>
+
+<!--Aqui comienza el div EtiquetaArticle-->
+<div class="etiquetaArticle">
+<article>
+<h2>Etiqueta Article</h2>
+<p>Especifica contenido independiente y autónomo. Un artícle debería tener sentido por sí solo y debería ser 
+posible distribuirlo independientemente del resto del sitio</p>
+</article>
+<!--Aqui termina el div EtiquetaArticle-->
+</div>
+
+<!--Aqui comienza el div Encabezados-->
+<div class="encabezados">
+<h2>Encabezados h1 al h6</h2>
+<p>Los encabezados HTML se definen con las etiquetas h1 al h6, donde h1 define el encabezado más importante. 
+y h6 define el encabezado menos importante Ejemplo:<br>
+<br>
+	h1>This is heading 1/h1><br>
+	h2>This is heading 2/h2><br>
+	h3>This is heading 3/h3><br>
+	h4>This is heading 4/h4><br>
+	h5>This is heading 5/h5><br>
+	h6>This is heading 6/h6><br>
+</p>
+</div>
+<!--Aqui termina el div Encabezado-->
+
+<!--Aqui comienza el div EtiquetaParrafo-->
+<div class="etiqueParrafo">
+<h2>Etiqueta p</h2>
+<p>Es la etiqueta de define un Parrafo</p>
+</div>
+<!--Aqui termina el div EtiquetaParrafo-->
+
+<!--Aqui comienza el div-- etiquetaBlockquote-->
+<div class="etiquetaBlockquote">
+<h2>Etiqueta Blockquote</h2>
+<p>El elemento blockquote define una sección que se cita de otra fuente. esta etiqueta tambien se utiliza para 
+citas ejemplo:<br>
+
+	p>Here is a quote from WWF's website:/p><br>
+<br>
+	blockquote cite="http://www.worldwildlife.org/who/index.html"><br>
+		For 50 years, WWF has been protecting the future of nature.
+		The world's leading conservation organization,
+		WWF works in 100 countries and is supported by
+		1.2 million members in the United States and
+		close to 5 million globally.<br>
+    /blockquote></p>
+</div>
+<!--Aqui termine el div etiquetaBlockquote-->
+
+
+<!--Aqui comienza el div EtiquetaUl-->
+<div class="etiquetaUl">
+<h2>Etiqueta UL</h2>
+<p>listas no ordenadas, se trata de una colección simple de elementos en la que no importa su orden, Cada elemento de la 
+ lista comienza con la etiqueta. ul> y cierra con /ul>, ejemplo: <br>
+<br>
+<ul>
+     <li>Coffee</li>
+     <li>Tea</li>
+     <li>Milk</li>
+	</ul>
+
+Nota : el elemento li> HTML se utiliza para definir un elemento de la lista</p>
+</div>
+<!--Aqui termine el div etiquetaUl-->
+
+<!--Aqui comienza el div Etiquetaol-->
+<div class="etiquetaOl">
+<h2>Etiqueta ol</h2>
+<p>listas ordenadas, similar a la anterior, pero los elementos están numerados y por tanto, importa su orden . Cada elemento 
+de la lista comienza con la etiqueta. ol> y termina con /ol> ejemplo: <br>
+<br>
+<ol>
+     <li>Coffee</li>
+     <li>Tea</li>
+     <li>Milk</li>
+	</ol>
+</p>
+</div>
+<!--Aqui termine el div Etiquetaol-->
+
+<!--Aqui comienza el div listasanidadas-->
+<div class="listasAnidadas">
+<h2>Listas Anidadas</h2>
+<p>La lista se puede anidar (listas dentro de listas) ejemplo:<br>
+<ul>
+     <li>Coffee</li>
+     <li>Tea
+    <ul>
+     <li>Black tea</li>
+     <li>Green tea</li>
+    </ul>
+     </li>
+     <li>Milk</li>
+    </ul>
+	</p>
+</div>
+<!--Aqui termine el div ListasAnidadas-->
+
+<!--Aqui empieza el div EtiquetaDl-->
+<div class="etiquetaDl">
+<h2>Etiqueta dl</h2>
+<p>Listas de definición, Las listas de definición apenas se utilizan en la mayoría de páginas HTML. Su funcionamiento es 
+similar al de un diccionario, ya que cada elemento de la lista está formado por términos y definiciones. 
+La etiqueta dl> crea la lista de definición y las 
+etiquetas dt> y dd> definen respectivamente el término y la descripción de cada elemento de la lista ejemplo:<br>
+<br>
+	<dl>
+     <dt>Coffee</dt>
+     <dd>- black hot drink</dd>
+
+     <dt>Milk</dt>
+     <dd>- white cold drink</dd>
+    </dl></p>
+</div>
+<!--Aqui termina el div Etiquetadl-->
+
+
+<!--Aqui empieza el div EtiquetaTable-->
+<div class="etiquetaTable">
+<h2>Etiqueta Table</h2>
+<p>Una tabla HTML se define con la etiqueta table> Cada fila de la tabla se define con la etiqueta tr>. Un encabezado 
+de tabla se define con la etiqueta th>. Por defecto, los encabezados de las tablas están en negrita y centrados. Una tabla de datos / celda se define con 
+la etiqueta td>, ejemplo:<br>
+
+Nota: Los elementos td> son los contenedores de datos de la tabla. Pueden contener todo tipo de elementos HTML; 
+texto, imágenes, listas, otras tablas, etc.
+
+table style="width:100%"><br>
+	  tr><br>
+	    th>Firstname/th><br>
+	    th>Lastname/th> <br>
+	    th>Age/th><br>
+	  /tr><br>
+
+	  tr><br>
+	    td>Jill/td><br>
+	    td>Smith/td> <br>
+	    td>50</td><br>
+	 </tr><br>
+<br>
+	 tr><br>
+	    td>Eve/td><br>
+	    td>Jacksos/td><br> 
+	    td>94/td><br>
+	  /tr></p>
+
+</div>
+<!--Aqui termina el div etiquetaTable-->
+
+
+<!--Aqui empieza el div tabla con encabezados-->
+<div class="tablasEncabezados">
+<h2>Tablas con encabezados (th)</h2>
+<p>La primer característica que le vamos a agregar a una tabla son las celdas de encabezado. 
+Normalmente la primer fila de una tabla puede representar los títulos para cada columna. 
+Para indicar que se trata de una celda de encabezado utilizamos el elemento th> en lugar de td></p>
+</div>
+<!--Aqui termina el div tablas con encabezados-->
+
+
+<!--Aqui empieza el div tablas con titulo-->
+<div class="tablasTitulo">
+<h2>Agregar titulo a una tabla</h2>
+<p>Agregar un título : Para agregar un título a una tabla, use la etiqueta<caption> ejemplo:<br>
+
+	<table style="width:100%">
+	  <caption>Monthly savings</caption>
+	  <tr>
+	    <th>Firstname</th>
+	    <th>Lastname</th> 
+	    <th>Age</th>
+	  </tr>
+
+	  <tr>
+	    <td>Jill</td>
+	    <td>Smith</td> 
+	    <td>50</td>
+	  </tr>
+
+	  <tr>
+	    <td>Eve</td>
+	    <td>Jackson</td> 
+	    <td>94</td>
+	  </tr>
+    </table></p>
+</div>
+<!--Aqui termina el div-->
+
+
+<!--Aqui empieza el div Tabla-->
+<div class="tabla">
+<h2>Concepto de tabla</h2>
+<p>Una tabla es un medio para organizar datos en filas y columnas.</p>
+</div>
+<!--Aqui termina el div-->
+
+<!--Aqui empieza el div Combinacion de celdas-->
+<div class="combinacionCeldas">
+<h2>Combinacion de celdas</h2>
+<p>La unificación de celdas es un mecanismo mediante el cual un autor puede combinar o fusionar dos o más celdas adyacentes 
+(td y th) en una tabla. Este efecto puede lograrse utilizando los atributos colspan, para unificación horizontal, 
+y rowspan, para unificación vertical. Estos atributos pueden tomar un valor entero mayor a cero, 
+que representa el número de celdas que participarán en la unificación.
+
+<table class="default">
+
+  <tr>
+
+    <th></th>
+
+    <th>Día 1</th>
+
+    <th>Día 2</th>
+
+    <th>Día 3</th>
+
+    <th>Día 4</th>
+
+  </tr>
+
+  <tr>
+
+    <th>Mike (lastimado)</th>
+
+    <td colspan="3">0 km</td>
+
+    <td>4 km</td>
+
+  </tr>
+
+  <tr>
+
+    <th>Susan</th>
+
+    <td>23 km</td>
+
+    <td>18 km</td>
+
+    <td>19 km</td>
+
+    <td>15 km</td>
+
+  </tr>
+
+</table>
+
+</p>
+</div>
+<!--Aqui termina el div combinacionCeldas-->
+
+<!--Aqui empieza el div etiquetahr-->
+<div class="etiquetahr">
+<h2>Etiqueta hr</h2>
+<p>La etiqueta hr define una linea en una página HTML, y se muestra con mayor frecuencia como una regla horizontal. El 
+elemento hr se usa para separar contenido (o definir un cambio) en una página HTML ejemplo:<br>
+
+	h1>This is heading 1/h1><br>
+	p>This is some text./p><br>
+	hr><br>
+	h2>This is heading 2/h2><br>
+	p>This is some other text./p><br>
+	hr></p>
+</div>
+<!--Aqui termina el div etiquetahr-->
+
+<!--Aqui empieza el div EtiquetaNoscript-->
+<div class="etiquetaNoscript">
+<h2>Etiqueta Noscript</h2>
+<p>etiqueta se utiliza para proporcionar un contenido alternativo para los usuarios que han deshabilitado los scripts 
+en su navegador o tienen un navegador que no admite scripts del lado del cliente ejemplo:
+
+	noscript>Sorry, your browser does not support JavaScript!/noscript></p>
+</div>
+<!--Aqui termina el div EtoqietaNoscript-->
+
+<!--Aqui empieza el div EtiquetaAddress-->
+<div class="etiquetaAddress">
+<h2>Etiqueta Address</h2>
+<p>El elemento <address> HTML define la información de contacto (autor / propietario) 
+de un documento o artículo. ejemplo:
+
+	<address>
+		Written by John Doe.<br> 
+		Visit us at:<br>
+		Example.com<br>
+		Box 564, Disneyland<br>
+		USA
+    </address>
+</p>
+</div>
+<!--Aqui termina el div EtiquetaAddress-->
+
+<!--Aqui empieza el div EtiquetaPre-->
+<div class="etiquetaPre">
+<h2>Etiqueta Pre</h2>
+<p>El elemento pre> HTML define texto preformateado. El texto dentro de un elemento pre> se muestra en una fuente de 
+ancho fijo (generalmente Courier), y conserva espacios y saltos de línea ejemplo:
+
+	<pre>
+  	   My Bonnie lies over the ocean.
+       My Bonnie lies over the sea.
+       My Bonnie lies over the ocean.
+       Oh, bring back my Bonnie to me.
+    </pre></p>
+</div>
+<!--Aqui termina el div EtiquetaPre-->
+
+
+<!--Aqui empieza el div etiquetasAnidadas-->
+<div class="etiquetasAnidadas">
+<h2>Etiquetas Anidadas</h2>
+<p>Anidadar una etiqueta es colocarla correctamente, siguiendo el orden de que si abrimos una etiqueta seria la siguiente en cerrar
+esa misma que abrimos, Ejemplo:<br>
+forma correcta:<br>
+head> title> /title> /head><br>
+forma incorrecta:<br>
+head> title> /head> /title>
+</p>
+</div>
+<!--Aqui termina el div etiquetasAnidadas-->
+
+<!--Aqui empieza el div etiquetasenlinea-->
+<div class="etiquetasLinea">
+<h2>Etiquetas en linea</h2>
+<p> Un elemento en línea no comienza en una nueva línea y solo ocupa el ancho que sea necesario. 
+por ejemplo elemento span es un elemento 
+en línea dentro de un párrafo. Elementos en línea en HTML:</p>
+<ol>
+<li>Etiqueta br</li>
+<li>Etiqueta b</li>
+<li>Etiqueta strong</li>
+<li>Etiqueta i</li>
+<li>Etiqueta em</li>
+<li>Etiqueta small</li>
+<li>Etiqueta span</li>
+<li>Etiqueta sub</li>
+<li>Etiqueta q</li>
+<li>Etiqueta abbr</li>
+<li>Etiqueta cite</li>
+<li>Etiqueta bdo</li>
+<li>Etiqueta code</li>
+</ol>
+
+</div>
+<!--Aqui termina el div etiquetasenlinea-->
+
+<!--Aqui empieza el div EtiquetaA-->
+<div class="etiquetaA">
+<h2>Enlaces y etiqueta a></h2>
+<p> Los enlaces HTML son hipervínculos. Puede hacer clic en un enlace y saltar a otro documento. Cuando mueves el mouse 
+sobre un enlace, la flecha del mouse se convertirá en una pequeña mano para escribir un enlace se hace 
+con la etiqueta a> y /a>. ejemplo :<br>
+
+	<a href="url">link text</a>
+	<a href="https://www.w3schools.com/html/">Visit our HTML tutorial</a><br>
+Nota: Un enlace no tiene que ser texto. Puede ser una imagen o cualquier otro elemento HTML.</p>
+</div>
+<!--Aqui termina el div EtiquetaA-->
+
+<!--Aqui empieza el div etiquetaMap-->
+<div class="etiquetaMap">
+<h2>Etiqueta map</h2>
+<p>La etiqueta map define un mapa de imagen. Un mapa de imagen es una imagen con áreas en las que se puede hacer clic, ejemplo:<br>
+
+<h2>Image Maps</h2>
+	<p>Click on the computer, the phone, or the cup of coffee to go to a new page and read more about the topic:</p>
+
+	<img src="Imagenes/practica.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+
+	<map name="workmap">
+	  <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+	  <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+	  <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.htm">
+</p>
+</div>
+<!--Aqui termina el div etiquetaMap-->
+
+<!--Aqui empieza el div Atributos-->
+<div class="atributos">
+<h2>Atributos</h2>
+<p>Los elementos en HTML tienen atributos; estos son valores adicionales que configuran los elementos o ajustan su 
+comportamiento de diversas formas para cumplir los criterios de los usuarios.</p>
+</div>
+<!--Aqui termina el div Atributos-->
+
+
+<!--Aqui empieza el div AtributosEnlaces-->
+<div class="atributosEnlaces">
+<h2>Atributo para enlaces href</h2>
+<p>especifica la dirección de destino ( https://www.w3schools.com/html/ ) del enlace. El texto del enlace es la parte visible 
+(visite nuestro tutorial HTML). Al hacer clic en el texto del enlace, se lo enviará a la dirección especificada.
+ejemplo:<br>
+
+	<a href="https://www.w3schools.com/html/">Visit our HTML tutorial</a>
+
+Nota: Sin una barra diagonal al final de las direcciones de las subcarpetas, puede generar dos solicitudes al servidor. 
+Muchos servidores agregarán automáticamente una barra diagonal al final de la dirección y luego crearán una nueva solicitud.</p>
+</div>
+<!--Aqui termina el div AtributosEnlaces-->
+
+<!--Aqui empieza el div AtributosTarget-->
+<div class="atributoTarget">
+<h2>Atributos para enlaces target</h2>
+<p>especifica dónde abrir el documento vinculado ejemplo:
+
+	<a href="https://www.w3schools.com/" target="_blank">Visit W3Schools!</a>
+
+Nota : Si su página web está bloqueada en un marco, puede usar target="_top"para salir del marco ejemplo:
+	
+	<a href="https://www.w3schools.com/html/" target="_top">HTML5 tutorial!</a></p>
+</div>
+<!--Aqui termina el div AtributosTarget-->
+
+<!--Aqui empieza el div AtributosBlank-->
+<div class="atributosBlank">
+<h2>Atributos para enlaces _blank</h2>
+<p>Abre el documento vinculado en una nueva ventana o pestaña ejemplo :
+
+	<a href="https://www.w3schools.com/" target="_blank">Visit W3Schools!</a></p>
+</div>
+<!--Aqui termina el div AtributosBlank-->
+
+<!--Aqui empieza el div AtributosSelf-->
+<div class="atributosSelf">
+<h2>Atributos para enlaces _self</h2>
+<p>Abre el documento vinculado en la misma ventana / pestaña en la que se hizo clic 
+(esto es predeterminado) ejemplo:<br>
+
+	<a href="https://www.w3schools.com/" target="_self">Visit W3Schools!</a></p>
+</div>
+<!--Aqui termina el div AtributosSelf-->
+
+<!--Aqui empieza el div AtributosParent-->
+<div class="atributosParent">
+<h2>Atributos para enlaces parent</h2>
+<p>Abre el documento vinculado en el marco primario ejemplo:	
+
+	<a href="https://www.w3schools.com/" target="_parent">Visit W3Schools!</a></p>
+</div>
+<!--Aqui termina el div AtributosParent-->
+
+<!--Aqui empieza el div AtributosTop-->
+<div class="atributosTop">
+<h2>Atributos para enlaces _top</h2>
+<p>Abre el documento vinculado en el cuerpo completo de la ventana ejemplo:
+
+	<a href="https://www.w3schools.com/html/" target="_top">HTML5 tutorial!</a></p>
+</div>
+<!--Aqui termina el div AtributosBlank-->
+
+
+<!--Aqui comienza el div Etiquetabr-->
+<div class="etiquetaBr">
+<h2>etiqueta br</h2>
+<p>El elemento br de HTML define un salto de línea, Úselo si desea un salto de línea (una nueva línea) sin 
+comenzar un nuevo párrafo<br>
+ejemplo:<br>
+
+	p>Esto es br> un parrafo br> Con salto de linea. /p></p>
+</div>
+<!--Aqui termina el div etiquetabr-->
+
+
+<!--Aqui comienza el div Etiquetab-->
+<div class="etiquetaB">
+<h2>Etiqueta b</h2>
+<p>El elemento b> de HTML define texto en negrita , sin ninguna importancia adicional.<br> 
+ejemplo:<br>
+
+	<b>This text is bold</b></p>
+</div>
+<!--Aqui comienza el div Etiquetab-->
+
+
+<!--Aqui comienza el div EtiquetaStrong-->
+<div class="etiquetaStrong">
+<h2>Etiqueta Strong</h2>
+<p>Elemento HTML define texto fuerte , con una importancia semántica "fuerte" añadida. ejemplo: 
+
+	<strong> This text is strong </strong></p>
+</div>
+<!--Aqui comienza el div EtiquetaStrong-->
+
+
+<!--Aqui comienza el div EtiquetaI-->
+<div class="etiquetaI">
+<h2>Etiqueta i</h2>
+<p>elemento HTML define texto en cursiva , sin ninguna importancia adicional. ejemplo: 
+
+	<i> This text is italic</i></p>
+</div>
+<!--Aqui comienza el div Etiquetai-->
+
+
+<!--Aqui comienza el div Etiquetaem-->
+<div class="etiquetaEm">
+<h2>Etiqueta em</h2>
+<p>Elementos en línea em> : elemento HTML define texto enfatizado , con mayor importancia semántica. 
+ejemplo:<br>
+
+	<em> This text is emphasized</em><br>
+
+Nota : Nota: Los navegadores se muestran strong como b y em como i. Sin embargo, 
+hay una diferencia en el significado de las siguientes etiquetas: 
+b y i define el texto en negrita y cursiva, pero strong y em significa que el texto es "importante".</p>
+</div>
+<!--Aqui comienza el div Etiquetaem-->
+
+<!--Aqui comienza el div EtiquetaSmall-->
+<div class="etiquetaSmall">
+<h2>Etiqueta small</h2>
+<p> El elemento small HTML define texto más pequeño ejemplo:<br>
+
+	<h4> HTML <small> Small </small> Formatting </h4></p>
+</div>
+<!--Aqui comienza el divEtiquetaSmall-->
+
+<!--Aqui empieza el div EtiquetaSpan-->
+<div class="etiquetaSpan">
+<h2>Etiqueta span</h2>
+<p> El elemento span se usa a menudo como contenedor para algún texto, 
+El elemento span tiene atributos no son necesarios, pero style, 
+classy idson comunes. Cuando se usa junto con CSS, el 
+<span>elemento se puede usar para dar estilo a partes del texto ejemplo:<br>
+
+	<h4>My <span style="color:red">Important</span> Heading</h4></p>
+</div>
+<!--Aqui termina el div EtiquetaSpan-->
+
+<!--Aqui empieza el div EtiquetaSub-->
+<div class="etiquetaSub">
+<h2>Etiqueta Sub</h2>
+<p>El elemento sub HTML define texto suscrito ejemplo:<br>
+
+	<p> This is <sub> subscripted </sub> text.</p></p>
+</div>
+<!--Aqui termina el div EtiquetaSub-->
+
+<!--Aqui empieza el div EtiquetaQ-->
+<div class="etiquetaQ">
+<h2>Etiqueta q</h2>
+<p> El elemento q  define una cita corta ejemplo :<br>
+
+	<p> WWF's goal is to: <q> Build a future where people live in harmony with nature.</q> </p></p>
+</div>
+<!--Aqui termina el div EtiquetaQ-->
+
+<!--Aqui empieza el div etiquetaAbbr-->
+<div class="etiquetaAbbr">
+<h2>Etiqueta Abbr</h2>
+<p>El elemento <abbr> HTML define una abreviatura o un acrónimo. Las abreviaturas de marcado pueden proporcionar 
+información útil a los navegadores, sistemas de traducción y motores de búsqueda. ejemplo:
+
+	<p> The <abbr title="World Health Organization"> WHO </abbr> was founded in 1948. </p></p>
+</div>
+<!--Aqui termina el div EtiquetaAbbr-->
+
+<!--Aqui empieza el div EtiquetaCite-->
+<div class="etiquetaCite">
+<h2>EtiquetaCite</h2>
+<p>El elemento cite define el título de una obra. ejemplo:
+
+	<p> <cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
+
+Nota :Los navegadores suelen mostrar <cite >elementos en cursiva.</cite></p>
+</div>
+<!--Aqui termina el div EtiquetaCite-->
+
+<!--Aqui empieza el div EtiquetaBdo-->
+<div class="etiquetaBdo">
+<h2>Etiqueta bdo</h2>
+<p>El elemento bdo HTML define la anulación bidireccional. ejemplo:<br>
+
+	<bdo dir="rtl">This text will be written from right to left</bdo><br>
+
+Nota : elemento bdo se usa para anular la dirección del texto actual:</p>
+</div>
+<!--Aqui termina el div EtiquetaBdo-->
+
+<!--Aqui empieza el div EtiquetaCode-->
+<div class="etiquetaCode">
+<h2>Etiqueta code</h2>
+<p>define un fragmento de código de computadora. El texto rodeado de etiquetas code generalmente se muestra 
+en una fuente 
+monoespacial ejemplo:<br>
+
+	<code>
+	  x = 5;
+	  y = 6;
+	  z = x + y;
+    </code>
+
+Nota : Tenga en cuenta que el code elemento no conserva espacios en blanco adicionales y saltos de línea. 
+Para solucionar esto, puede poner el code
+elemento dentro de un elemento pre ejemplo:<br>
+	<pre>
+	<code>
+	  x = 5;
+	  y = 6;
+	  z = x + y;
+    </code>
+    </pre></p>
+</div>
+<!--Aqui termina el div EtiquetaCode-->
+
+<!--Aqui empieza el div Formularios-->
+<div class="formularios">
+<h2>Formularios Html</h2>
+<p>El elemento form HTML define un formulario que se utiliza para recopilar la entrada del usuario, Los elementos de 
+formulario son diferentes tipos de elementos de entrada, como campos de texto, casillas de verificación, botones de opción, 
+botones de envío y más.<br>
+ejemplo:<br>
+
+	<form>
+	......
+	</form></p>
+</div>
+<!--Aqui termina el div formularios-->
+
+<!--Aqui comienza el div Label-->
+<div class="etiquetaLabel">
+<h2>Etiqueta Label</h2>
+<p>define una etiqueta para un elemento button, input, meter, output, progress, select o textarea.<br>
+Tipos de entrada HTML : Estos son los diferentes tipos de entrada que puede usar en HTML ejemplo :
+
+	<form action="/action_page.php">
+	  <label for="male">Male</label>
+	  <input type="radio" name="gender" id="male" value="male"><br>
+	  <label for="female">Female</label>
+	  <input type="radio" name="gender" id="female" value="female"><br>
+	  <label for="other">Other</label>
+	  <input type="radio" name="gender" id="other" value="other"><br><br>
+	  <input type="submit" value="Submit"></p>
+</div>
+<!--Aqui termina el div Label-->
+
+
+<!--Aqui comienza el div EtiquetaInput-->
+<div class="etiquetaInput">
+<h2>Etiqueta input</h2>
+<p>El elemento input es el elemento de formulario más importante. 
+El elemento input se puede mostrar de varias maneras, 
+dependiendo del atributo de tipo ejemplo:<br>
+
+	<input type="text">	    Define un campo de entrada de texto de una línea.<br>
+    <input type="radio">	Define un botón de radio (para seleccionar una de muchas opciones)<br>
+    <input type="submit">	Define un botón de envío (para enviar el formulario)</p>
+</div>
+<!--Aqui termina el div etiquetaInput-->
+
+
+<!--Aqui comienza el div tiposInput-->
+<div class="tiposInput">
+<h2>Tipos de input</h2>
+<p><input type="button"><br>
+<input type="checkbox"> define una casilla de verificación<br>
+<input type="color"> utiliza para campos de entrada que deben contener un color<br>
+<input type="date">  se utiliza para los campos de entrada que deben contener una fecha<br>
+<input type="datetime-local"> especifica un campo de entrada de fecha y hora, sin zona horaria<br>
+<input type="email"> utiliza para campos de entrada que deben contener una dirección de correo electrónico.<br>
+<input type="file">  define un campo de selección de archivo y un botón "Examinar" para la carga de archivos<br>
+<input type="hidden"> <br>
+<input type="image"><br>
+<input type="month">  permite al usuario seleccionar un mes y año.<br>
+<input type="number"> define un campo de entrada numérico<br>
+<input type="password"> Establece contraseña<br>
+<input type="radio"> Establece radioButon<br>
+<input type="range"> define un control para la introducción de un número cuyo valor exacto no es importante<br>
+<input type="reset"> define un botón de reinicio que restablecerá todos los valores de formulario a sus valores predeterminados<br>
+<input type="search"> se utiliza para campos de búsqueda<br>
+<input type="submit"> define un botón para enviar datos de formulario<br>
+<input type="tel">  utiliza para campos de entrada que deben contener un número de teléfono<br>
+<input type="text"> Establece tipo de texto<br>
+<input type="time"> permite al usuario seleccionar un tiempo (sin zona horaria).<br>
+<input type="url">  usa para campos de entrada que deben contener una dirección URL.<br>
+<input type="week"> permite al usuario seleccionar una semana y el año </p>
+</div>
+<!--Aqui termina el div tiposInput-->
+
+
+<!--Aqui comienza el div radiobotton-->
+<div class="radioBotton">
+<h2>Boton de radio</h2>
+<p>define un botón de radio. Los botones de opción le permiten al usuario seleccionar UNA de una cantidad limitada de opciones 
+ejemplo:<br>
+
+	<form>
+      <input type="radio" name="gender" value="male" checked> Bueno<br>
+      <input type="radio" name="gender" value="female"> Regular<br>
+      <input type="radio" name="gender" value="other"> Malo
+    </form></p>
+</div>
+<!--Aqui termina el div radiobotton-->
+
+<!--Aqui comienza el div submitBotton-->
+<div class="submitBotton">
+<h2>Boton Enviar</h2>
+<p>define un botón para enviar los datos del formulario a un controlador de formulario .El controlador de formulario 
+suele ser una página de servidor con un script para procesar datos de entrada.El controlador de formulario 
+se especifica en el atributo de acción del formulario 
+ejemplo:<br>
+
+	<form action="/action_page.php">
+      First name:<br>
+      <input type="text" name="firstname" value="Mickey"><br>
+      Last name:<br>
+      <input type="text" name="lastname" value="Mouse"><br><br>
+      <input type="submit" value="Enviar">
+    </form></p>
+</div>
+<!--Aqui termina el div submitBotton-->
+
+
+<!--Aqui comienza el div etiquetaSelect-->
+<div class="etiquetaSelect">
+<h2>Etiqueta Select</h2>
+<p>El elemento de formulario select define una lista desplegable ejemplo:<br>
+
+	<select name="cars">
+     <option value="volvo">Volvo</option>
+     <option value="saab">Saab</option>
+     <option value="fiat">Fiat</option>
+     <option value="audi">Audi</option>
+    </select><br>
+Nota : Los elementos option definen una opción que se puede seleccionar, De manera predeterminada, se selecciona el primer 
+elemento de la lista desplegable Para definir una opción preseleccionada, agregue el selectedatributo a la opción ejemplo: 
+
+	<option value="fiat" selected>Fiat</option></p>
+</div>
+<!--Aqui termina el div etiquetaSelect-->
+
+
+<!--Aqui comienza el div etiquetaButton-->
+<div class="etiquetaButton">
+<h2>Etiqueta Button</h2>
+<p>El elemento button define un botón en el que se puede hacer clic ejemplo:<br>
+
+	<button>Click Me!</button><br>
+
+Nota: Especifique siempre el atributo de tipo para el elemento del botón. Los diferentes navegadores pueden usar diferentes 
+tipos predeterminados para el elemento del botón.</p>
+</div>
+<!--Aqui termina el div etiquetaButton-->
+
+
+<!--Aqui comienza el div etiquetaTextarea-->
+<div class="etiquetaTextarea">
+<h2>Etiqueta Textarea</h2>
+<p>El elemento de formulario  textarea define un campo de entrada de varias líneas ( un área de texto ) ejemplo:<br>
+	<textarea name="message" rows="10" cols="30">
+      The cat was playing in the garden.
+    </textarea><br>
+
+El atributo rows : especifica el número visible de líneas en un área de texto.<br>
+
+El atributo cols : especifica el ancho visible de un área de texto.</p>
+</div>
+<!--Aqui termina el div etiquetaTextarea-->
+
+
+<!--Aqui comienza el div EtiquetaImg-->
+<div class="etiquetaImg">
+<h2>Etiqueta Img</h2>
+<p>las imágenes se definen con la etiqueta img. Las imágenes pueden mejorar el diseño y la apariencia de una página web. 
+En HTML, las imágenes se definen con  la etiqueta img ejemplo:<br>
+
+	<img src="Imagenes/monte.jpg" alt="Italian Trulli"><br>
+
+Nota : La img etiqueta está vacía, contiene solo atributos y no tiene una etiqueta de cierre. 
+El src atributo especifica la URL (dirección web) de la imagen, Alternativamente, se puede utilizar los atributos widthy 
+height, Los atributos widthy height siempre definen el ancho y el alto de la imagen en 
+píxeles.ejemplo:<br>
+
+	<img src="Imagenes/flor.png" alt="Girl in a jacket" width="500" height="600"></p>
+</div>
+<!--Aqui termina el div EtiquetaImg-->
+
+
+<!--Aqui comienza el div Comillas-->
+<div class="comillas">
+<h2>Comillas</h2>
+<p>Las comillas dobles alrededor de los valores de los atributos son las más comunes en HTML, pero también se 
+pueden usar comillas simples. En algunas situaciones, cuando el valor del atributo contiene comillas dobles, 
+es necesario utilizar comillas simples ejemplo:<br>
+
+	<p> title='John "ShotGun" Nelson'></p>
+	<p> title="John 'ShotGun' Nelson"></p>
+</div>
+<!--Aqui termina el div Comillas-->
+
+
+<!--Aqui comienza el div Comentarios-->
+<div class="comentarios">
+<h2>Etiqueta Comentarios</h2>
+<p>Las etiquetas de comentarios se utilizan para insertar comentarios en el código fuente HTML. Puede agregar 
+comentarios a su fuente HTML utilizando la siguiente sintaxis:<br>
+
+	<!-- Esto es un comentario -->
+
+	<p>This is a paragraph.</p>
+
+	<!-- Remember to add more information here -->
+
+Nota : El navegador no muestra comentarios, pero pueden ayudarlo a documentar su código fuente HTML.	</p>
+</div>
+<!--Aqui termina el div Comentarios-->
+
+
+<!--Aqui comienza el div atributos-->
+<div class="atributos">
+<h2>Atributos</h2>
+<p>Los atributos proporcionan información adicional sobre elementos HTML, Todos los elementos HTML pueden tener atributos, Los atributos 
+proporcionan información adicional sobre un elemento, Los atributos siempre se especifican en la etiqueta de inicio, Los atributos generalmente vienen en 
+pares nombre / valor como: nombre = "valor" ejemplo:
+
+	<p title="parraf"> soy un parrafo con un atributo title</p></p>
+</div>
+<!--Aqui termina el div atributos atributos-->
+
+<!--Aqui comienza el div atributoLang-->
+<div class="atributoLang">
+<h2>Atributo lang</h2>
+<p>El idioma del documento se puede declarar en la etiqueta <html>. El idioma se declara con el atributo lang, 
+Declarar un idioma es importante para las aplicaciones de accesibilidad (lectores de pantalla) y los motores de búsqueda, ejemplo:<br>
+
+	!DOCTYPE html><br>
+	html lang="en-US"><br>
+	body><br>
+	  ....
+	/body><br>
+	/html></p><br>
+</div>
+<!--Aqui termina el div atributoLang-->
+
+
+<!--Aqui comienza el div atributoSrc-->
+<div class="atributoSrc">
+<h2>Las imágenes HTML se definen con la etiqueta img. El nombre de archivo de la fuente de la imagen se especifica en el 
+atributo src ejemplo:<br>
+
+	img src="imagenes/foto.jpg">/h2>
+<p></p>
+</div>
+<!--Aqui termina el div atributoSrc-->
+
+<!--Aqui comienza el div atributoAltoancho-->
+<div class="atributoAltoancho">
+<h2>Atributo para imagen de alto y ancho</h2>
+<p>Las imágenes HTML también tienen atributos widthy height, que especifica el ancho y el alto de la imagen ejemplo: <br>
+	img src="img_girl.jpg" width="500" height="600"><br>
+
+Nota : El ancho y la altura se especifican en píxeles de forma predeterminada; entonces ancho = "500" significa 500 píxeles de ancho.</p>
+</div>
+<!--Aqui termina el div atributoAltoancho-->
+
+<!--Aqui comienza el div atributoAlt-->
+<div class="atributoAlt">
+<h2>Atributo para imagen ALT</h2>
+<p>El atributo "alt" especifica un texto alternativo que se utilizará, si no se puede mostrar una imagen. El valor del 
+altatributo puede ser leído por lectores de pantalla. De esta manera, alguien que "escucha" la página web, por ejemplo, una persona con discapacidad visual, 
+puede "escuchar" el elemento. ejemplo:
+
+	<img src="img_girl.jpg" alt="Girl with a jacket">
+
+Nota : El altatributo también es útil si la imagen no se puede mostrar (por ejemplo, si no existe), Nota: el altatributo es obligatorio. Una página web no 
+se validará correctamente sin ella</p>
+</div>
+<!--Aqui termina el div atributoAlt-->
+
+<!--Aqui comienza el div atributoAction-->
+<div class="atributoAction">
+<h2>Atributo para formulario Action</h2>
+<p>El actionatributo define la acción a realizar cuando se envía el formulario. Normalmente, los datos del formulario se 
+envían a una página web en el servidor cuando el usuario hace clic en el botón Enviar ejemplo:<br>
+
+	form action="/action_page.php"><br>
+		....
+	/form><br>
+	
+Nota : Si actionse omite el atributo, la acción se establece en la página actual.</p>
+</div>
+<!--Aqui termina el div atributoAction-->
+
+<!--Aqui comienza el div AtributoMethod-->
+<div class="atributoMethod">
+<h2>Atributo para formulario Method</h2>
+<p> especifica el método HTTP ( GET o POST ) que se utilizará al enviar los datos del formulario ejemplo:
+
+	form action="/action_page.php" method="get">
+	 ....
+	/form> </p>
+</div>
+<!--Aqui termina el div AtributoMethod-->
+
+<!--Aqui comienza el div atributoTitulo-->
+<div class="atributoTitulo">
+<h2>Atributo Titulo</h2>
+<p> Aquí, title se agrega un atributo al elemento p. El valor del atributo del título se mostrará como información sobre herramientas 
+cuando pase el mouse sobre el párrafo, ejemplo:<br>
+	<p title="I'm a tooltip">
+	This is a paragraph.
+	</p>
+
+Nota : El estándar HTML5 no requiere nombres de atributo en minúsculas, El atributo de título se puede escribir con mayúsculas o minúsculas como título o 
+TÍTULO W3C recomienda minúsculas en HTML y exige minúsculas para tipos de documentos más estrictos como XHTML. Usar comillas son las más comunes. Omitir 
+comillas puede producir errores. En W3Schools siempre usamos comillas alrededor de los valores de los atributos.</p>
+</div>
+<!--Aqui termina el div atributoTitulo-->
+
+<!--Aqui comienza el div atributoClass-->
+<div class="atributoClass">
+<h2>Atributo Class</h2>
+<p>se usa para definir estilos iguales para elementos con el mismo nombre de clase. Por lo tanto, todos los elementos HTML con el 
+mismo classatributo obtendrán el mismo estilo ejemplo: <br>
+
+	div class="cities"><br>
+	  h2>London/h2><br>
+	  p>London is the capital of England./p><br>
+	/div><br>
+
+	div class="cities"><br>
+	  h2>Paris/h2><br>
+	  p>Paris is the capital of France./p><br>
+	/div><br>
+
+Nota: ¡ El nombre de la clase distingue entre mayúsculas y minúsculas!  El atributo class se puede usar en cualquier elemento HTML.</p>
+</div>
+<!--Aqui termina el div atributoClass-->
+
+<!--Aqui comienza el div atributoId-->
+<div class="atributoId">
+<h2>Atributo Id</h2>
+<p> El atributo id especifica una identificación única para un elemento HTML (el valor debe ser único dentro del documento HTML).
+ejemplo :<br><br>
+
+	h1 id="myHeader">My Header/h1><br><br>
+
+Nota: El valor de identificación distingue entre mayúsculas y minúsculas. El valor de identificación debe contener al menos un carácter y no debe contener 
+espacios en blanco (espacios, tabulaciones, etc.).<br>
+
+Diferencia entre clase e identificación : Un elemento HTML solo puede tener una identificación única que pertenezca a ese único elemento, mientras que varios 
+elementos pueden usar un nombre de clase
+</p>
+</div>
+<!--Aqui termina el div atributoId-->
+
+<!--Aqui comienza el div atributoName-->
+<div class="atributoName">
+<h2>Atributo para formulario Name</h2>
+<p>Cada campo de entrada debe tener un atributo name para ser enviado. Si el namese omite el atributo, los datos de ese campo 
+de entrada no se enviarán a todos ejemplo:<br><br>
+
+	form action="/action_page.php"><br>
+     First name:<br>
+     input type="text" value="Mickey"><br>
+     Last name:<br>
+     input type="text" name="lastname" value="Mouse"><br><br>
+     input type="submit" value="Submit">
+    /form></p>
+</div>
+<!--Aqui termina el div atributoName-->
+
+
+<!--Aqui comienza el div atributoValue-->
+<div class="atributoValue">
+<h2>atributo Value</h2>
+<p>El atributo value  especifica el valor inicial para un campo de entrada ejemplo:<br><br>
+
+ 	form action=""><br>
+     First name:<br>
+     input type="text" name="firstname" value="John"><br>
+    /form></p>
+</div>
+<!--Aqui termina el div atributoValue-->
+
+
+
+<!--Aqui comienza el div atributoReadonly-->
+<div class="atributoReadonly">
+<h2>Atributo Readonly</h2>
+<p>especifica que el campo de entrada es de solo lectura (no se puede cambiar) ejemplo:<br>
+
+	<form action="">
+     First name:<br>
+     <input type="text" name="firstname" value="John" readonly>
+    </form></p>
+</div>
+<!--Aqui termina el div atributoReadonly-->
+
+
+
+
+<!--Aqui comienza el div atributoDisable-->
+<div class="atributoDisable">
+<h2>Atributo Disable</h2>
+<p> especifica que el campo de entrada está deshabilitado. Un campo de entrada deshabilitado no se puede usar ni hacer clic, 
+y su valor no se enviará al enviar el formulario ejemplo:<br>
+
+	<form action="">
+      First name:<br>
+      <input type="text" name="firstname" value="John" disabled>
+    </form></p>
+</div>
+<!--Aqui termina el div atributoDisable-->
+
+
+
+<!--Aqui comienza el div atributoSize-->
+<div class="atributoSize">
+<h2>Atributo Size</h2>
+<p>especifica el tamaño (en caracteres) para el campo de entrada ejemplo:<br>
+
+	<form action="">
+     First name:<br>
+     <input type="text" name="firstname" value="John" size="40">
+    </form></p>
+</div>
+<!--Aqui termina el div atributoSize-->
+
+
+<!--Aqui comienza el div atributoMaxlength-->
+<div class="atributoMaxlength">
+<h2>Atributo Maxlength</h2>
+<p>especifica la longitud máxima permitida para el campo de entrada ejemplo:<br>
+
+	<form action="">
+     First name:<br>
+     <input type="text" name="firstname" maxlength="10">
+    </form></p>
+</div>
+<!--Aqui termina el div atributoMaxlength-->
+
+
+
+<!--Aqui comienza el div atributoAutofocus-->
+<div class="atributoAutofocus">
+<h2>Atributo Autofocus</h2>
+<p>especifica que el campo de entrada debería enfocarse automáticamente cuando se carga la página ejemplo:<br><br>
+
+	First name:input type="text" name="fname" autofocus></p>
+</div>
+<!--Aqui termina el div atributoAutofocus-->
+
+<!--Aqui comienza el div atributoPlaceholder-->
+<div class="atributoPlaceholder">
+<h2>Atributo Placeholder</h2>
+<p> especifica una pista que describe el valor esperado de un campo de entrada 
+(un valor de muestra o una breve descripción del formato) ejemplo:<br>
+
+	<input type="text" name="fname" placeholder="First name"></p>
+</div>
+<!--Aqui termina el div atributoPlaceholder-->
+
+
+<!--Aqui comienza el div atributoRequired-->
+<div class="atributoRequired">
+<h2>Atributo Required</h2>
+<p>especifica que se debe completar un campo de entrada antes de enviar el formulario ejemplo:<br>
+
+	Username: <input type="text" name="usrname" required></p>
+</div>
+<!--Aqui termina el div atributoRequired-->
+
+
+<!--Aqui comienza el div atributoStyle-->
+<div class="atributoStyle">
+<h2>Atributo Style</h2>
+<p>El atributo "style" se utiliza para especificar el estilo de un elemento, como color, fuente, tamaño, etc. ejemplo:<br>
+
+	<p style="color:red">This is a paragraph.</p></p>
+</div>
+<!--Aqui termina el div atributoStyle-->
+
+
+<!--Aqui comienza el div formularioGet-->
+<div class="formularioGet">
+<h2>Formulario Get</h2>
+<p>El método predeterminado al enviar datos del formulario es GET. Sin embargo, cuando se utiliza GET, 
+los datos del formulario enviado serán visibles en el campo de dirección de la página ejemplo:<br>
+
+	form action="/action_page.php" method="get"<br>
+	 ....<br>
+	/form<br><br>
+
+Nota : los datos del formulario enviado serán visibles en el campo de dirección de la página ejemplo:<br>
+
+    /action_page.php?firstname=Mickey&lastname=Mouse</p>
+</div>
+<!--Aqui termina el div formularioGet-->
+
+
+<!--Aqui comienza el div formularioPost-->
+<div class="formularioPost">
+<h2>Formulario Post</h2>
+<p>si los datos del formulario contienen información confidencial o personal. El método POST no muestra los datos del 
+formulario enviado en el campo de dirección de página.<br><br>
+
+	form action="/action_page.php" method="post"<br>
+	 ....<br>
+	/form></p
+</div>
+<!--Aqui termina el div formularioPost-->
+
+
+<!--Aqui comienza el div rutasArchivos-->
+<div class="rutasArchivos">
+<h2>Rutas de archivos</h2>
+<p> Una ruta de archivo describe la ubicación de un archivo en la estructura de carpetas de un sitio web.
+Las rutas de archivo se utilizan al vincular a archivos externos como: páginas web, Imágenes, Hojas de estilo, JavaScripts<br>
+
+img src="picture.jpg"> picture.jpg se encuentra en la misma carpeta que la página actual<br>
+img src="images/picture.jpg"> picture.jpg se encuentra en la carpeta de imágenes en la carpeta actual<br>
+img src="/images/picture.jpg">	picture.jpg se encuentra en la carpeta de imágenes en la raíz de la web actual<br>
+img src="../picture.jpg">	picture.jpg se encuentra en la carpeta un nivel más arriba de la carpeta actual</p>
+</div>
+<!--Aqui termina el div rutasArchivos-->
+
+<!--Aqui comienza el div rutasArchivoabsoluta-->
+<div class="rutasArchivoabsoluta">
+<h2>Rutas de archivo absoluta</h2>
+<p>Una ruta de archivo absoluta es la URL completa de un archivo de Internet ejemplo:<br>
+
+	img src="https://www.w3schools.com/images/picture.jpg" alt="Mountain"> </p>
+</div>
+<!--Aqui terminar el div rutasArchivoabsoluta-->
+
+
+<!--Aqui comienza el div rutasArchivorelativa-->
+<div class="rutasArchivorelativa">
+<h2>Rutas de archivo relativa</h2>
+<p>Una ruta de archivo relativa apunta a un archivo relativo a la página actual. En este ejemplo, la ruta del archivo apunta a un 
+archivo en la carpeta de imágenes ubicada en la raíz de la web actual ejemplo:
+
+	<img src="/images/picture.jpg" alt="Mountain"> </p>
+</div>
+<!--Aqui terminar el div rutasArchivorelativa-->
+
+<!--Aqui comienza el div etiquetaLink-->
+<div class="etiquetaLink">
+<h2>Etiqueta link</h2>
+<p>El elemento link se utiliza para vincular a hojas de estilo externas ejemplo:<br>
+	link rel="stylesheet" href="mystyle.css"</p>
+</div>
+<!--Aqui terminar el div etiquetaLink-->
+
+<!--Aqui comienza el div etiquetaDel-->
+<div class="etiquetaDel">
+<h2>etiquetaDel</h2>
+<p>El elemento del HTML define el texto eliminado / eliminado ejemplo:
+
+	<p> My favorite color is <del> blue </del> red.</p></p>
+</div>
+<!--Aqui terminar el div etiquetaDel-->
+
+<!--Aqui comienza el div etiquetaIns-->
+<div class="etiquetaIns">
+<h2>Etiqueta Ins</h2>
+<p>El elemento ins HTML define el texto insertado / agregado ejemplo:<br>
+
+	<p> My favorite <ins> color </ins> is red.</p></p>
+</div>
+<!--Aqui terminar el div etiquetaIns-->
+
+<!--Aqui comienza el div etiquetaBase-->
+<div class="etiquetaBase">
+<h2>Etiqueta Base</h2>
+<p>El base elemento especifica la URL base y el objetivo base para todas las URL relativas en una página ejemplo:<br>
+
+	base href="https://www.w3schools.com/images/" target="_blank"> </p>
+</div>
+<!--Aqui terminar el div etiquetaBase-->
+
+<!--Aqui comienza el div etiquetaFigure-->
+<div class="etiquetaFigure">
+<h2>Etiqueta Figure</h2>
+<p>especifica contenido autónomo, como ilustraciones, diagramas, fotos, listados de códigos, etc Si bien el 
+contenido del elemento <figure> está relacionado con el flujo principal, su posición es independiente del flujo principal y, 
+si se elimina, no debería afectar el flujo del documento ejuemplo:<br>
+
+	<figure>
+      <img src="Imagenes/monte.jpg" alt="The Pulpit Rock" width="304" height="228">
+    </figure></p>
+</div>
+<!--Aqui terminar el div etiquetaFigure-->
+
+<!--Aqui comienza el div etiquetaFigcaption-->
+<div class="etiquetaFigcaption">
+<h2>etiqueta Figcaption</h2>
+<p>define un título para un elemento figure El elemento figcaption se puede colocar como el primer o 
+último hijo del elemento figure ejemplo:<br><br>
+
+	figure><br>
+      img src="pic_trulli.jpg" alt="Trulli" style="width:100%"><br>
+      figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption><br>
+    /figure></p>
+</div>
+<!--Aqui terminar el div etiquetaFigcaption-->
+
+<!--Aqui comienza el div etiquetaFooter-->
+<div class="etiquetaFooter">
+<h2>Etiqueta Footer</h2>
+<p>define un pie de página para un documento o sección ejemplo:<br>
+
+	<footer>
+      <p>Posted by: Hege Refsnes</p>
+      <p>Contact information: <a href="mailto:someone@example.com">
+      someone@example.com</a>.</p>
+	</footer></p>
+</div>
+<!--Aqui terminar el div etiquetaFooter-->
+
+<!--Aqui comienza el div etiquetaHeader-->
+<div class="etiquetaHeader">
+<h2>etiquetaHeader</h2>
+<p>representa un contenedor para contenido introductorio o un conjunto de enlaces de navegación ejemplo:<br>
+
+	<article>
+      <header>
+        <h2>Most important heading here</h2>
+        <h3>Less important heading here</h3>
+        <p>Some additional information here</p>
+      </header>
+        <p>Lorem Ipsum dolor set amet....</p>
+    </article>
+
+Nota: No se puede colocar una etiqueta <header> dentro de un <footer>, <address> u otro elemento <header>.    </p>
+</div>
+<!--Aqui terminar el div etiquetaHeader-->
+
+<!--Aqui comienza el div etiquetaNav-->
+<div class="etiquetaNav">
+<h2>etiquetaNav</h2>
+<p>define un conjunto de enlaces de navegación. Tenga en cuenta que NO todos los enlaces de un documento deben estar 
+dentro de un elemento <nav>. El elemento <nav> está destinado solo para el bloque principal de enlaces de navegación, ejemplo:
+
+	<nav>
+      <a href="/html/">HTML</a> |
+      <a href="/css/">CSS</a> |
+      <a href="/js/">JavaScript</a> |
+      <a href="/jquery/">jQuery</a>
+    </nav></p>
+</div>
+<!--Aqui terminar el div etiquetaNav-->
+
+<!--Aqui comienza el div -->
+<div class="">
+<h2></h2>
+<p></p>
+</div>
+<!--Aqui terminar el div -->
+
+<!--Aqui comienza el div -->
+<div class="">
+<h2></h2>
+<p></p>
+</div>
+<!--Aqui terminar el div -->
+
+<!--Aqui comienza el div -->
+<div class="">
+<h2></h2>
+<p></p>
+</div>
+<!--Aqui terminar el div -->
+
+<!--Aqui comienza el div -->
+<div class="">
+<h2></h2>
+<p></p>
+</div>
+<!--Aqui terminar el div -->
+
+
+
+
+
+<!--Aqui cierra el div container-fluid-->
+</div>
+</body>
+</html>
